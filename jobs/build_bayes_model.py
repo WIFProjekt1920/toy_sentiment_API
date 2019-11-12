@@ -57,5 +57,5 @@ def build_model(es):
     pickle.dump(vectorizer, open("../models/vectorizer.p", 'wb'))
 
 
-es = Elasticsearch([{"host": "localhost", "port": 9200}])
+es = Elasticsearch([{"host": "elasticsearch", "port": 9200}])
 build_model(es)
