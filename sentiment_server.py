@@ -8,7 +8,7 @@ import re
 
 app = Flask(__name__)
 
-es = Elasticsearch([{"host": "localhost", "port": 9200}])
+es = Elasticsearch([{"host": "elasticsearch", "port": 9200}])
 
 
 @app.route('/labeling', methods=['GET'])
